@@ -7,14 +7,14 @@ pipeline {
     
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub') 
-        IMAGE_NAME_SERVER = 'sbika/server'  
-        IMAGE_NAME_CLIENT = 'sbika/client' 
+        IMAGE_NAME_SERVER = 'ahmedamira22/server'  
+        IMAGE_NAME_CLIENT = 'ahmedamira22/client' 
     }
     
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/MohamedSbika/Mern_app_Docker'
+                git branch: 'main', url: 'https://github.com/Ahmedamira22/jenkins-test.git'
             }
         }
         
